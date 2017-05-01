@@ -1,0 +1,31 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:Shaders="clr-namespace:Shazzam.Shaders;assembly=Shazzam.Shaders" TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{DynamicResource MaterialDesignPaper}"
+        TextElement.FontWeight="Medium"
+        TextElement.FontSize="14"
+        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
+        x:Name="timedEvent" x:Class="timedEvent.MainWindow"
+        mc:Ignorable="d"
+        Title="timedEvent" Height="311.007" Width="362.732" BorderThickness="0" ResizeMode="NoResize" Icon="icon.ico">
+    <Window.Effect>
+        <DropShadowEffect/>
+    </Window.Effect>
+    <Grid Margin="0,0,0,-19">
+        <Label x:Name="selectsoftlabel" Content="Selected Software:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="19,6,0,0"/>
+        <Label x:Name="executiontime" Content="Starting Time:" VerticalAlignment="Top" Margin="19,78,233,0"/>
+        <TextBox x:Name="filepath" Height="28" VerticalAlignment="Top" Margin="18,33,19,0" VerticalScrollBarVisibility="Auto" IsReadOnly="True"/>
+        <Button x:Name="browsefile" Content="Select" HorizontalAlignment="Left" VerticalAlignment="Top" Width="72" Margin="268,72,0,0" Click="browsefile_Click"/>
+        <Button x:Name="startbutton" Content="Start timedEvent" VerticalAlignment="Top" Margin="98,229,98,0" Height="33" Click="startbutton_Click"/>
+        <Label x:Name="endingtime" Content="Closing Time:" VerticalAlignment="Top" Margin="22,112,233,0"/>
+        <materialDesign:TimePicker x:Name="starttimer" HorizontalAlignment="Left" Margin="120,79,0,0" VerticalAlignment="Top" Width="97" RenderTransformOrigin="0.801,0.457"/>
+        <materialDesign:TimePicker x:Name="closetimer" HorizontalAlignment="Left" Margin="120,113,0,0" VerticalAlignment="Top" Width="97" RenderTransformOrigin="0.801,0.457"/>
+        <Label x:Name="closingaction" Content="Closing Action:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,166,0,0"/>
+        <RadioButton x:Name="closesoftware" GroupName="closeaction" Content="Close Software" IsChecked="True" HorizontalAlignment="Left" Margin="23,195,0,67"/>
+        <RadioButton x:Name="closecomputer" GroupName="closeaction" Content="Shutdown Computer" HorizontalAlignment="Left" Margin="144,195,0,67"/>
+    </Grid>
+</Window>
