@@ -1,4 +1,4 @@
-![alt text](https://raw.githubusercontent.com/DarkLive/timedEvent/master/Splash.png)
+![alt text]<p align="center">(https://raw.githubusercontent.com/DarkLive/timedEvent/master/Splash.png)</p>
 
 ![alt text](https://raw.githubusercontent.com/DarkLive/timedEvent/master/Screen.jpg)
 
