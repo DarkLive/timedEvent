@@ -64,10 +64,10 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>216BCEC5E0EEB05196D1740710A10AE36CBE7D39</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>782934214248CD128EBEEFCA2994C666F27D2376</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>timedEvent_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>timedEvent_1_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -77,6 +77,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AutoClosingMessageBox, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
@@ -150,6 +153,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="timedEvent_1_TemporaryKey.pfx" />
     <None Include="timedEvent_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
