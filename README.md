@@ -1,5 +1,9 @@
 <p align="center"><img src=https://raw.githubusercontent.com/DarkLive/timedEvent/master/Splash.png></p>
-<br><hr><br>
+
+
+<hr>
+
+
 ![alt text](https://raw.githubusercontent.com/DarkLive/timedEvent/master/Screen.jpg)
 
 ### Installation ###
