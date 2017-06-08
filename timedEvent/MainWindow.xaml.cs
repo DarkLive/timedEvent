@@ -31,7 +31,7 @@ namespace timedEvent
             browsefile.IsEnabled = false;
             starttimer.IsEnabled = false;
             closetimer.IsEnabled = false;
-            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Interval = TimeSpan.FromMilliseconds(500);
             timer.Tick += timer_Tick;
             timer.Start();
         }
@@ -64,12 +64,13 @@ namespace timedEvent
                     closetimer.IsEnabled = true;
                     timer.Stop();
                 }
+                else if (closecomputer.IsChecked == true)
+                {
+                    Process.Start("shutdown", "/s /f /t 0");
+                }
                 else
                 {
-                    var p = new ProcessStartInfo("shutdown", "/s /t 0");
-                    p.CreateNoWindow = true;
-                    p.UseShellExecute = false;
-                    Process.Start(p);
+
                 }
             }
         }
